@@ -1,0 +1,111 @@
+.container {
+	width: 100%;
+}
+
+/* Heading Row */
+.heading {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 60px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	box-shadow: var(--box-shadow);
+	margin: 10px;
+	background-color: white;
+	border-radius: 4px;
+	padding: 0 10px;
+}
+
+/* Column Tabs */
+.title_tab {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--black);
+	flex: 2;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.genre_tab,
+.author_tab,
+.year_tab {
+	font-size: 16px;
+	font-weight: 600;
+	color: var(--black);
+	flex: 1;
+	text-align: center;
+}
+
+/* Book Row */
+.book {
+	display: flex;
+	align-items: center;
+	height: 70px;
+	margin: 5px 10px;
+	box-shadow: var(--box-shadow);
+	cursor: pointer;
+	transition: all 0.1s ease;
+	background-color: white;
+	border-radius: 4px;
+	padding: 0 10px;
+}
+
+.book:hover {
+	scale: 1.01;
+}
+
+/* Title + Image */
+.title_container {
+	flex: 2;
+	display: flex;
+	align-items: center;
+	object-fit: contain;
+}
+
+.book_img {
+	width: 40px;
+	height: 60px;
+	object-fit: contain;
+	margin: 0 10px;
+}
+
+.book_title {
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--black);
+}
+
+/* Genre */
+.genre_container {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+}
+
+.book_genre {
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--black);
+}
+
+/* Author */
+.book_author {
+	flex: 1;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 400;
+	color: var(--black);
+}
+
+/* Year */
+.book_year {
+	flex: 1;
+	font-size: 14px;
+	text-align: center;
+	font-weight: 400;
+	color: var(--black);
+}

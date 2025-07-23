@@ -1,0 +1,39 @@
+.container {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: calc(100% - 20px);
+	margin: 0 10px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+
+.page_btn {
+	outline: none;
+	border: none;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 5px;
+	box-shadow: var(--box-shadow);
+	cursor: pointer;
+	background-color: white;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.page_btn:hover {
+	background-color: #e6e6e6;
+}
+
+.active {
+	background-color: var(--blue);
+	color: white;
+}
