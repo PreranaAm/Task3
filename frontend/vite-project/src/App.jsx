@@ -73,7 +73,7 @@ import Search from "./components/Search";
 import "./App.css";
 
 // Direct API call to your backend
-const base_url = "http://localhost:8080/api";
+const base_url = "https://task3-1-g1nz.onrender.com";
 
 function App() {
 	const [obj, setObj] = useState({});
