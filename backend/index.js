@@ -13,7 +13,7 @@ app.use("/",api)
 app.use(express.static(path.join(__dirname, "dist")));
 
 // For all remaining routes, serve index.html (React SPA)
-app.get("*", (req, res) => {
+app.get("/{*any}", (req, res) => {
   res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 app.listen(8080,(req,res)=>{
