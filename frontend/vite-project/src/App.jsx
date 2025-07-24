@@ -86,7 +86,7 @@ function App() {
 	useEffect(() => {
 		const getAllBooks = async () => {
 			try {
-				const url = `${base_url}?page=${page}&limit=${limit}&sort=${sort.sort},${sort.order}&genre=${filterGenre.join(",")}&search=${search}`;
+				const url = `${base_url}/api?page=${page}&limit=${limit}&sort=${sort.sort},${sort.order}&genre=${filterGenre.join(",")}&search=${search}`;
 				const { data } = await axios.get(url);
 				setObj(data);
 			} catch (err) {
